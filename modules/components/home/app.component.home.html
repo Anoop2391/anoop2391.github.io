@@ -1,0 +1,86 @@
+<!-- top header -->
+<div class="header-top bg-theme">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center">
+                <ul class="d-flex header-w3_pvt mfont_13">
+                    <li>
+                        <span class="fa fa-envelope-open"></span>
+                        <a href="" class="text-white">hillclimbers23@gmail.com</a>
+                    </li>
+                    <li>
+                        <span class="fa fa-phone"></span>
+                        <p class="d-inline text-white">+91-8588829838</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="col-md-6 hearder-right-w3_pvt">
+                <ul class="d-flex header-w3_pvt justify-content-lg-end mfont_13">
+                    <li><button type="button" class="btn w3ls-btn d-block" data-toggle="modal" aria-pressed="false" data-target="#exampleModal1">
+                            <span class="fa fa-sign-in"></span>Register
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn w3ls-btn btn-2  d-block" data-toggle="modal" aria-pressed="false" data-target="#exampleModal">
+                            <span class="fa fa-lock"></span> Sign in
+                        </button>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- //top header -->
+<!-- banner -->
+<div id="home">
+    <!-- header -->
+    <header-component></header-component>
+    <!-- //header -->
+    <div class="callbacks_container">
+        <ul class="rslides" id="slider3">
+            <li class="banner banner-background" ng-repeat="banner in mainCtrl.bannerArray" ng-style="{'background-image':'url({{banner.url}})'}">
+                <div class="container">
+                    <div class="banner-text">
+                        <div class="slider-info">
+                            <span class="line">collect moments..</span>
+                            <h3>a <span data-blast="bgColor">delightful</span> trip awaits!</h3>
+                            <p class="text-white">“The most beautiful in the world is, of course, the world itself.”</p>
+                            <a class="btn bg-theme mt-4 w3_pvt-link-bnr scroll text-white" data-blast="bgColor"
+                                    href="#about" role="button">View
+                                    More</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- //banner -->
+<!-- about -->
+<about-component></about-component>
+<!-- about -->
+<!-- services -->
+<!-- <service-component></service-component> -->
+<!-- //services -->
+<!-- about bottom -->
+<div class="" data-blast="bgColor">
+    <!-- pricing plans -->
+    <packages-component></packages-component>
+    <!-- //pricing plans -->
+    <!-- portfolio -->
+    <portfolio-component></portfolio-component>
+    <!-- //portfolio -->
+    <!-- blog -->
+    <!-- <blog-component></blog-component> -->
+    <!-- //blog -->
+    <!-- team -->
+    <!-- <team-component></team-component> -->
+    <!-- //team -->
+    <!-- contact -->
+    <contact-component></contact-component>
+    <!-- //contact -->
+    <!-- footer -->
+    <footer-component></footer-component>
+    <!-- //footer -->
+    <!-- login  -->
+</div>

@@ -1,0 +1,37 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <h1>
+            <a class="navbar-brand text-white" href="#/home">
+                Pahadi Trekkers
+            </a>
+        </h1>
+        <button class="navbar-toggler ml-md-auto" type="button" ng-click="headerCtrl.active = false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse" id="navbarSupportedContent" ng-style="{'display': (headerCtrl.active ? 'none': '')}">
+            <ul class="navbar-nav ml-lg-auto text-center">
+                <li class="nav-item mr-lg-3 mt-lg-0 mt-sm-3" ng-click="headerCtrl.active = true">
+                    <a class="nav-link" href="" data-blast="color">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li lass="nav-item  mr-lg-3 mt-lg-0 mt-3"  ng-click="headerCtrl.active = true">
+                    <a class="nav-link scroll" href="#discover">Discover</a>
+                </li>
+                <li class="nav-item  mr-lg-3 mt-lg-0 mt-3" ng-click="headerCtrl.active = true">
+                    <a class="nav-link scroll" href="#about">About</a>
+                </li>
+                <li class="nav-item  mr-lg-3 mt-lg-0 mt-3" ng-click="headerCtrl.active = true">
+                    <a class="nav-link scroll" href="#plans">Packages</a>
+                </li>
+                
+                <li  class="nav-item  mr-lg-3 mt-lg-0 mt-3" ng-click="headerCtrl.active = true">
+                    <a class="nav-link scroll" href="#portfolio">Portfolio</a>
+                </li>
+                <li  class="nav-item  mt-lg-0 mt-3" ng-click="headerCtrl.active = true">
+                    <a class="nav-link scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

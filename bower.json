@@ -1,0 +1,15 @@
+{
+  "name": "Camping",
+  "description": "Camping",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "1.6.4",
+    "jquery": "2.2.3",
+    "angular-route": "1.6.4",
+    "underscore": "1.8.3",
+    "bootstrap": "4.0.0",
+    "ng-idle": "1.3.2",
+    "smoothscroll-for-websites": "^1.4.8"
+  }
+}

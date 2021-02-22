@@ -2,20 +2,20 @@
 <div class="header-top bg-theme">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 d-flex align-items-center">
-                <ul class="d-flex header-w3_pvt mfont_13">
+            <div class="col-md-6">
+                <ul class="d-flex header-w3_pvt">
                     <li>
                         <span class="fa fa-envelope-open"></span>
-                        <a href="" class="text-white">hillclimbers23@gmail.com</a>
+                        <a href="" class="text-white">negicamphouse@gmail.com</a>
                     </li>
                     <li>
                         <span class="fa fa-phone"></span>
-                        <p class="d-inline text-white">+91-8588829838</p>
+                        <p class="d-inline text-white">+91 85888 29838</p>
                     </li>
                 </ul>
             </div>
             <!-- <div class="col-md-6 hearder-right-w3_pvt">
-                <ul class="d-flex header-w3_pvt justify-content-lg-end mfont_13">
+                <ul class="d-flex header-w3_pvt justify-content-lg-end">
                     <li><button type="button" class="btn w3ls-btn d-block" data-toggle="modal" aria-pressed="false" data-target="#exampleModal1">
                             <span class="fa fa-sign-in"></span>Register
                         </button>
@@ -32,22 +32,24 @@
 </div>
 <!-- //top header -->
 <!-- banner -->
-<div id="home">
+<div id="home" ng-click="homeCtrl.goTo()">
     <!-- header -->
     <header-component></header-component>
     <!-- //header -->
     <div class="callbacks_container">
         <ul class="rslides" id="slider3">
-            <li class="banner banner-background" ng-repeat="banner in mainCtrl.bannerArray" ng-style="{'background-image':'url({{banner.url}})'}">
+            <li class="banner banner-background" ng-repeat="banner in mainCtrl.bannerArray"
+                ng-style="{'background-image':'url({{banner.url}})'}">
                 <div class="container">
                     <div class="banner-text">
                         <div class="slider-info">
                             <span class="line">collect moments..</span>
                             <h3>a <span data-blast="bgColor">delightful</span> trip awaits!</h3>
-                            <p class="text-white">“The most beautiful in the world is, of course, the world itself.”</p>
+                            <p class="text-white">A Bad day camping is still better than a good day working, Because
+                                life is better when you are camping with friends. </p>
                             <a class="btn bg-theme mt-4 w3_pvt-link-bnr scroll text-white" data-blast="bgColor"
-                                    href="#about" role="button">View
-                                    More</a>
+                                href="#about" role="button">View
+                                More</a>
                         </div>
                     </div>
                 </div>
@@ -60,27 +62,208 @@
 <about-component></about-component>
 <!-- about -->
 <!-- services -->
-<!-- <service-component></service-component> -->
+<service-component></service-component>
 <!-- //services -->
 <!-- about bottom -->
-<div class="" data-blast="bgColor">
-    <!-- pricing plans -->
-    <packages-component></packages-component>
-    <!-- //pricing plans -->
-    <!-- portfolio -->
-    <portfolio-component></portfolio-component>
-    <!-- //portfolio -->
-    <!-- blog -->
-    <!-- <blog-component></blog-component> -->
-    <!-- //blog -->
-    <!-- team -->
-    <!-- <team-component></team-component> -->
-    <!-- //team -->
-    <!-- contact -->
-    <contact-component></contact-component>
-    <!-- //contact -->
-    <!-- footer -->
-    <footer-component></footer-component>
-    <!-- //footer -->
-    <!-- login  -->
+<div class="about-wthree1 bg-theme" data-blast="bgColor">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 about-left-wthree">
+                <div class="title-desc  pb-sm-3">
+                    <h3 class="main-title-w3pvt text-white text-capitalize">discover</h3>
+                    <p class="text-white">Explore it all. The sky is the limit!</p>
+                </div>
+                <p class="my-3 text-white child_second">Bhadraraj temple</p>
+                <p class="my-3 text-white child_second">This temple is situated at top of the hill . Nice place to visit
+                    You will love the view from up top.</p>
+                <div class="ml-auto">
+                    <a href="#portfolio"
+                        class="text-capitalize text-dark w3_pvt-link-bnr btn bg-light scroll mt-sm-4">view
+                        more</a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <img src="assets/images/g4.jpg" alt="" class="img-fluid rounded" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- about bottom -->
+<!-- pricing plans -->
+<packages-component></packages-component>
+<!-- //pricing plans -->
+<!-- portfolio -->
+<portfolio-component></portfolio-component>
+<!-- //portfolio -->
+<!-- blog -->
+<!-- <blog-component></blog-component> -->
+<!-- //blog -->
+<!-- team -->
+<team-component></team-component>
+<!-- //team -->
+<!-- contact -->
+<contact-component></contact-component>
+<!-- //contact -->
+<!-- footer -->
+<footer-component></footer-component>
+<!-- //footer -->
+<!-- login  -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header" data-blast="bgColor">
+                <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="w3_pvt-contact-top">
+                    <h2>get in touch </h2>
+                    <ul class="d-flex header-wthreelayouts pt-0 flex-column">
+                        <li>
+                            <span class="fa fa-home" data-blast="color"></span>
+                            <p class="d-inline">Bhadraj ghati, above Dhudli village, Mussoorie</p>
+                        </li>
+                        <li class="my-3">
+                            <span class="fa fa-envelope-open" data-blast="color"></span>
+                            <a href="mailto:negicamphouse@gmail.com" class="text-secondary">negicamphouse@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="fa fa-phone" data-blast="color"></span>
+                            <p class="d-inline">+91 85888 29838</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //login -->
+<!-- register -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header" data-blast="bgColor">
+                <h5 class="modal-title" id="exampleModalLabel1">Register</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" method="post" class="p-3">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Username</label>
+                        <input type="text" class="form-control" placeholder="" name=" name" id="recipient-rname"
+                            required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-email" class="col-form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="" name="Email" id="recipient-email"
+                            required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="password1" class="col-form-label">Password</label>
+                        <input type="password" class="form-control" placeholder="" name="Password" id="password1"
+                            required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="password2" class="col-form-label">Confirm Password</label>
+                        <input type="password" class="form-control" placeholder="" name="Confirm Password"
+                            id="password2" required="">
+                    </div>
+                    <div class="sub-w3l">
+                        <div class="sub-w3_pvt">
+                            <input type="checkbox" id="brand2" value="">
+                            <label for="brand2" class="mb-3">
+                                <span></span>I Accept to the Terms & Conditions</label>
+                        </div>
+                    </div>
+                    <div class="right-w3l">
+                        <input type="submit" class="form-control" value="Register">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- // register -->
+<!-- blog modal1 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-theme">
+                <h5 class="modal-title" id="exampleModalLabel2">Cras ultricies ligula sed magna dictum porta
+                    auris
+                    blandita.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="assets/images/p1.jpg" class="img-fluid" alt="" />
+                <p class="text-left my-4">
+                    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet
+                    nisl
+                    tempus convallis quis ac
+                    lectus. Cras ultricies ligula sed magna dictum porta.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //blog modal1 -->
+<!-- blog modal2 -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-theme">
+                <h5 class="modal-title" id="exampleModalLabel3">Cras ultricies ligula sed magna dictum porta
+                    auris
+                    blandita.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="assets/images/p2.jpg" class="img-fluid" alt="" />
+                <p class="text-left my-4">
+                    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet
+                    nisl
+                    tempus convallis quis ac
+                    lectus. Cras ultricies ligula sed magna dictum porta.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //blog modal2 -->
+<!-- blog modal3 -->
+<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-theme">
+                <h5 class="modal-title" id="exampleModalLabel4">Cras ultricies ligula sed magna dictum porta
+                    auris
+                    blandita.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="assets/images/p3.jpg" class="img-fluid" alt="" />
+                <p class="text-left my-4">
+                    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet
+                    nisl
+                    tempus convallis quis ac
+                    lectus. Cras ultricies ligula sed magna dictum porta.
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
